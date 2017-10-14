@@ -1,0 +1,47 @@
+.animal_interesting_fact {
+	font-style: italic;
+}
+
+.animal_item {
+	font-weight: bold;
+}
+
+.animal_li {
+	list-style-type: none;
+	margin:4px;
+}
+
+.animal_ul {
+	padding:0;
+	margin:0;
+}
+
+.animal_head {
+	width: 300px;
+	margin: 10px;
+}
+
+/*margin,padding是以当前的width向外扩展，固定的width的不变的*/
+.animal_img {
+	width:300px;
+	margin: 10px;
+	background: black;
+}
+
+/*border是在width的大小之外在扩展出相应的距离*/
+.animal_content {
+	border: 2px solid rgb(213,213,213); 
+	width: 320px;
+	padding-bottom: 10px;
+	box-shadow: 10px 10px 5px rgb(213,213,213);
+}
+
+.animal_information {
+	width: 276px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border: 2px solid rgb(213,213,213);
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
