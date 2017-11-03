@@ -1,54 +1,41 @@
-// Select color input
-// Select size input
-
-// When size is submitted by the user, call makeGrid()
-
 let tableColor;
 
 function makeGrid() {
-    genertateTable();
-}
 
-makeGrid();
-
-function genertateTable() {
     // get width and high
-    let tableLength = $('#input_height').val();
-    let tanleWidth = $('#input_width').val();
+    let tableLength = document.getElementById("input_height").value;
+    let tanleWidth = document.getElementById('input_width').value;
 
     // create table
-    let table = $('#pixel_canvas');
-    table.html("");
-    for (let i = 0; i < tableLength; i++) {
+    const table = document.getElementById('pixel_canvas');
+    table.innerHTML = '';
 
-        let tr = $('<tr></tr>');
-        table.append(tr);
+    for (let i = 0; i < tableLength; i++) {
+        // insert <tr>
+        const row = table.insertRow(i);
 
         for (let j = 0; j < tanleWidth; j++) {
-            tr.append('<td></td>');
+            // insert <td>
+            const cell = row.insertCell(j);
+            cell.addEventListener('mouseover', function(e) {
+                if (e.which === 1) {
+                    cell.style.backgroundColor = tableColor;
+                }
+            });
         }
     }
 }
 
-$(function(){
-   tableColor = $('#colorPicker').val();
-})
-
 // user tap submit
-$( '#submit' ).on( 'click', function() {
-    genertateTable();
+const sizePicker = document.querySelector("#sizePicker");
+sizePicker.addEventListener("submit", function(e) {
+    e.preventDefault();
+    makeGrid();
 });
 
-$( '#pixel_canvas' ).on( 'mousemove', 'td', function(e) {
-
-    if (e.which === 1){
-        $(this).css('background-color', tableColor);
-    }
-
+// change table color
+const colorPicker = document.getElementById("colorPicker");
+tableColor = colorPicker.value;
+colorPicker.addEventListener('change', function() {
+    tableColor = colorPicker.value;
 });
-
-$( '#colorPicker' ).on( 'change', function() {
-    tableColor = $(this).val();
-});
-
-

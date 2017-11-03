@@ -1,16 +1,20 @@
 # Pixel Art Maker Project
 
-## Table of Contents
+## How to use ?
 
-* [Instructions](#instructions)
-* [Contributing](#contributing)
+Firstly, you should fill width and high in two inputs. Then, Tap the `<submiit>` button. 
 
-## Instructions
+Secondly, you should choose a color that you like.
 
-To get started, open `designs.js` and start building out the app's functionality.
+Lastly, you can move in the table when you press the LFET MOUSE BUTTOM.
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom](https://classroom.udacity.com/me).
+## Describe 
+This is first version，Maybe function is not perfect. So hope you don't mind.
 
-## Contributing
+Thanks!
 
-This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
+---
+
+dawn 
+
+
