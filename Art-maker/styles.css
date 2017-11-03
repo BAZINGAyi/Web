@@ -58,3 +58,24 @@ input[type=number] {
     }
 
 }
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 960px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    tr {
+        height: 15px;
+    }
+
+    td {
+        width: 15px;
+    }
+
+    #sizePicker {
+        font-size: 20px
+    }
+
+}
