@@ -5,8 +5,6 @@
 
 let tableColor;
 
-let isKeydown = false;
-
 function makeGrid() {
     genertateTable();
 }
@@ -53,13 +51,4 @@ $( '#colorPicker' ).on( 'change', function() {
     tableColor = $(this).val();
 });
 
-
-// $( '#pixel_canvas' ).on( 'keypress', function() {
-//     alert(isKeydown);
-//     if (isKeydown) {
-//         isKeydown = false;
-//     }else {
-//         isKeydown = ture;
-//     }
-// });
 
