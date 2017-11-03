@@ -6,107 +6,107 @@ body, html {
 }
 
 h1, h2, h3, h4, h5 {
-  	margin: 0; 
+  	margin: 0;
 }
 
 body {
-  font-family: Roboto;
-  color: #424242;
+    font-family: Roboto;
+    color: #424242;
 }
 
 header, nav, footer, section, article, div {
-  	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 ul {
-  	list-style: none;
-  	padding: 0;
-  	margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 /*header section start*/
 
 .header {
-  	min-height: 75px;
-  	transition: min-height 0.3s;
+    min-height: 75px;
+    transition: min-height 0.3s;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 }
 
 .header__logo {
-	height: 65px;
-  margin-left: 5%;
-  vertical-align: top;
-  margin-top: 0.5em;
+    height: 65px;
+    margin-left: 5%;
+    vertical-align: top;
+    margin-top: 0.5em;
 }
 
 .header_title {
-	display: inline-block;
-	margin: 0.5em 5%;
-	text-align: right;
-	float: right;
-	color: #2d3c49;
+    display: inline-block;
+    margin: 0.5em 5%;
+    text-align: right;
+    float: right;
+    color: #2d3c49;
 }
 
 .header__maintitle {
-  font-weight: 350;
-  font-size: 2em;
+    font:;ont-weight: 350;
+    font-size: 2em;
 }
 
 .header_subtitle {
-	margin-top: 0.5em;
-  font-size: 1em;
+    margin-top: 0.5em;
+    font-size: 1em;
 }
 
 .nav_hr {
-	height: 0.1em;
-	background-color: #7d97ad;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    height: 0.1em;
+    background-color: #7d97ad;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 }
 
 /*header section end*/
 
 /*content section start*/
 main {
-  margin-top: 0.5em;
-  padding-bottom: 2em;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+    margin-top: 0.5em;
+    padding-bottom: 2em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
 }
 
 .primary_picture {
-	width: 100%;
+    width: 100%;
 }
 
 .thumb_title {
-  margin-top: 10px;
-  margin-left: 5%;
+    margin-top: 10px;
+    margin-left: 5%;
 }
 
  /*这里使用 flexbox 来保持居中内容*/
 /* box-shadow 与 设置浮动后的元素冲突，之前是通过 设置 display: inline-block; 来居中*/
 .thumb_gallery {
-   display: -webkit-flex;
-   display: flex;
+    display: -webkit-flex;
+    display: flex;
 }
 
 .thumb_display {
-  width: 100%;
+    width: 100%;
 }
 
 .thumb_item {
-  	text-align: center;
+    text-align: center;
 }
 
 .thumb_picture {
-	 width: 100%;
+    width: 100%;
 }
 
 .thumb_url {
-	display: block;
+    display: block;
 }
 
 .thumb_item {
-  -webkit-flex: 1;
-          flex: 1;
+    -webkit-flex: 1;
+            flex: 1;
 }
 
 /*content section end*/
@@ -121,10 +121,9 @@ main {
 
   .thumb_gallery {
     flex-direction: column;
-}
+  }
 
   .thumb_item {
     width: 100%;
   }
-
 }
