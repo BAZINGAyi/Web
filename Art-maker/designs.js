@@ -26,6 +26,10 @@ function makeGrid() {
             cell.addEventListener('click', function() {
                 cell.style.backgroundColor = tableColor;
             });
+            // user double tap to recover default
+            cell.addEventListener('dblclick', function() {
+                cell.style.backgroundColor = HEXtoRGB("#ffffff")
+            });
         }
     }
 }
@@ -43,3 +47,11 @@ tableColor = colorPicker.value;
 colorPicker.addEventListener('change', function() {
     tableColor = colorPicker.value;
 });
+
+// hex to rgb
+function HEXtoRGB(hex) {
+  var r = parseInt(hex.slice(1, 3), 16);
+  var g = parseInt(hex.slice(3, 5), 16);
+  var b = parseInt(hex.slice(5, 7), 16);
+  return "rgb(" + r + ", " + g + ", " + b + ")";
+}
