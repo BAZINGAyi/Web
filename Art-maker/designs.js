@@ -1,7 +1,6 @@
 let tableColor;
 
 function makeGrid() {
-
     // get width and high
     let tableLength = document.getElementById("input_height").value;
     let tanleWidth = document.getElementById('input_width').value;
@@ -17,10 +16,15 @@ function makeGrid() {
         for (let j = 0; j < tanleWidth; j++) {
             // insert <td>
             const cell = row.insertCell(j);
+            // user move mouse when tap left mouse button
             cell.addEventListener('mouseover', function(e) {
                 if (e.which === 1) {
                     cell.style.backgroundColor = tableColor;
                 }
+            });
+            // user tap left mouse button
+            cell.addEventListener('click', function() {
+                cell.style.backgroundColor = tableColor;
             });
         }
     }
