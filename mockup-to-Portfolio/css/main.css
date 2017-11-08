@@ -1,5 +1,5 @@
 body, html {
-  	margin: 0 auto 0;
+  	margin: 0 auto;
   	padding: 0;
   	width: 80%;
   	height: 100%;
@@ -9,19 +9,15 @@ h1, h2, h3, h4, h5 {
   	margin: 0;
 }
 
-body {
-    font-family: Roboto;
+body
+{
+    /*设置字体的默认值*/
+    font-family: "Roboto", sans-serif;
     color: #424242;
 }
 
 header, nav, footer, section, article, div {
     box-sizing: border-box;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
 }
 
 /*header section start*/
@@ -48,7 +44,7 @@ ul {
 }
 
 .header__maintitle {
-    font:;ont-weight: 350;
+    font-weight: 350;
     font-size: 2em;
 }
 
@@ -86,6 +82,8 @@ main {
 .thumb_gallery {
     display: -webkit-flex;
     display: flex;
+    padding: 0;
+    margin: 0;
 }
 
 .thumb_display {
@@ -111,7 +109,8 @@ main {
 
 /*content section end*/
 
-@media screen and (min-width: 1px) and (max-width: 558px) {
+/*pad*/
+@media screen and (min-width: 400px) and (max-width: 558px) {
   body, html {
     margin: 0;
     padding: 0;
@@ -125,5 +124,35 @@ main {
 
   .thumb_item {
     width: 100%;
+  }
+}
+
+/*phone*/
+@media screen and (max-width: 400px) {
+  body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .thumb_gallery {
+    flex-direction: column;
+  }
+
+  .thumb_item {
+    width: 100%;
+  }
+
+  .header__maintitle {
+    font-weight: 350;
+    font-size: 1.5em;
+  }
+
+  .header__logo {
+    height: 55px;
+    margin-left: 5%;
+    vertical-align: top;
+    margin-top: 0.5em;
   }
 }
